@@ -1,0 +1,301 @@
+\documentclass[mathserif,envcountsect,compress]{beamer}
+%\usepackage{cctbase,ccmap,everb}               % CCT 的相关宏包, 使支持中文, 等等.
+%\usepackage[normalem]{CCTfntef}                % 2005-11-18 向作者报告 bug 后, 修改.
+\usepackage{hyperref}
+\hypersetup{CJKbookmarks=true}
+\usetheme{Madrid}%\usecolortheme{albatross}
+%\setbeamercolor{background canvas}{bg=blue!9} % 背景颜色可调.
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{color,xcolor, colortbl}
+\usepackage{pgf,tikz}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage{picins}                            % 图片嵌入段落宏包 比如照片
+\usepackage{graphicx}
+\usepackage{epstopdf} 
+\usepackage{fixltx2e}
+\usepackage{tikz}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\def\mathunderline#1#2{\color{#1}\underline{{\color{black}#2}}\color{black}}
+
+\usetikzlibrary{shapes,arrows}
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{navigation symbols}{}
+%------------------------------------------------------
+\usepackage{bbding}% 手势 \HandRight \HandLeft %\FiveStar \FourStar \SixStar
+\newcommand{\handr}{\textcolor{magenta}{\HandRight}} % 自定义\handr
+%%==================================自定义=========================================%
+\newcommand{\jieda}{\noindent\textcolor{red}{\heiti an:}\quad}
+\newcommand{\zheng}{\noindent\textcolor{red}{\heiti prove:}\quad}
+\newcommand{\yunhan}{\,{\color{red!70}\Rightarrow}\,}
+
+\makeatletter %自定义: 罗马数字
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\makeatother
+%==============自定义: 逐个 item 高亮(\hilite), 或"高黑"(\hidark)==================%
+\def\hilite<#1>{%
+\temporal<#1>{\color{blue!35}}{\color{magenta}}%
+{\color{blue!75}}}
+\def\hidark<#1>{%
+\temporal<#1>{\color{black!35}}{\color{magenta}}%
+{\color{black}}}
+%====================== metapost =================================================%
+\usepackage{xmpmulti}  %% metapost 动画
+\DeclareGraphicsRule{*}{mps}{*}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+
+
+\setbeamertemplate{itemize/enumerate body begin}{\large}
+\setbeamertemplate{itemize/enumerate subbody begin}{\large}
+
+    
+\begin{document}
+
+
+\AtBeginSection[]{
+     \frametitle{frame}\small
+   \tableofcontents[currentsection,currentsubsection,subsectionstyle=show/show/hide]
+ }
+ \titlegraphic{\includegraphics[height=0.15\textwidth]{figures/kth.eps}}
+\title[2015 E-MRS Spring Meeting]{Electronic and Optical Properties in Cu-based Materials for Thin-film Solar Cells}%({\small \kaishu reference})}
+\author[Rongzhen Chen]{PhD student: Rongzhen\ Chen\\[0.3em]Supervisor: Clas Persson}
+\institute[MMM, MSE, KTH]{\textcolor[rgb]{0.85,0.42,0.00}{%Multiscale Materials Modelling \\
+Department of Materials Science and Engineering\\
+Royal Institute of Technology, Stockholm SE-10044, Sweden}}
+\small\date{14th-May-2015}
+
+\frame{\titlepage}
+
+%\begin{frame}\frametitle{Outline}\small
+%\tableofcontents
+%\end{frame}
+
+
+%\section{Background}
+\begin{frame}
+\frametitle{What materials am I working on?}
+\begin{center}
+%\includegraphics[height=0.65\textwidth]{figures/defence_figs_1.eps}
+\begin{itemize}
+ \item Commercial materials: \\
+  \hspace{2.5cm} Cu(In,Ga)Se\textsubscript{2} and Cu\textsubscript{2}(Zn, Sn)Se\textsubscript{4}.
+ \item High absorption materials: \\
+   \hspace{2.5cm} Cu(Sb,Bi)(S,Se)\textsubscript{2} and Cu\textsubscript{3}(Sb,Bi)(S,Se)\textsubscript{3}.
+ \item Noval materials: \\
+  \hspace{2.5cm} Cu\textsubscript{2}S, SnS, Cu\textsubscript{2}SnS\textsubscript{3}, and Cu\textsubscript{4}SnS\textsubscript{4}.
+ \end{itemize}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Motivation}
+{\large We want to understand materails Cu-based materials for solar cells. }
+\begin{center}
+\begin{itemize}
+ \item Why some materials have high or low absorption coefficient?
+ \item How good band-gap can we obtain using theoretical calculation?
+ \end{itemize}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Computational methods}
+%\begin{columns}[c]
+\begin{itemize}
+ \item Fundamental methods.
+ 
+  \begin{itemize}
+  \item Density-functional theory (DFT). 
+  \item Kohn-Sham (KS) equation. 
+ \end{itemize}
+ \item Beyond DFT.
+ \begin{itemize}
+  \item GW approximation 
+  \item Heyd-Scuseria-Ernzerhof (HSE) hybrid functional. 
+ \end{itemize}
+ \end{itemize}
+
+\end{frame}
+
+
+\captionsetup{width=0.3\linewidth}
+
+
+\begin{frame}
+  \frametitle{Previous results 1: parameterization of band structure}
+
+  
+  \begin{figure}
+\centering
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=.785\linewidth]{figures/paper2figure1.eps}
+  \captionof{figure}{\tiny{Band structure along four directions. Circles(fbp), Dotted(pba), and solid lines (calculation).}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=.785\linewidth]{figures/copyfigure2_paper2.eps}
+    \captionof{figure}{\tiny{Close-up of electronic band structure.}}
+  \label{fig:test2}
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=.785\linewidth]{figures/paper1figure3.eps}
+    \captionof{figure}{\tiny{Inverse of effective electron and hole masses.}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{Previous results 1: density-of-states (DOS) and DOS mass}
+ \begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.85\linewidth]{figures/paper2figure4.eps}
+  \captionof{figure}{\tiny{Total DOS of the VBs and CB.}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.82\linewidth]{figures/paper2figure6.eps}
+  \captionof{figure}{\tiny{DOS mass. \quad \quad \quad \quad \quad \quad}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+  
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Previous results 2: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
+
+   \begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
+  \captionof{figure}{{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
+at 40 K (solid line) and 300 K (dashed lines).}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.85\linewidth]{figures/APL1a.jpg}
+  \captionof{figure}{{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
+calculated by FPLAPW method at 0 K.}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+  
+\end{frame}
+
+
+
+
+
+\begin{frame}
+  \frametitle{Previous results 2: analysis of the imaginary part of dielectric function}
+
+     \begin{figure}
+\centering
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/APL4.eps}
+  \captionof{figure}{\scriptsize{Band-to-band analysis of the contribution to the total $\varepsilon_2$ spectrum. The vertical axis is in the log scale.}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.55\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{figures/APL3.eps}
+  \captionsetup{width=0.9\linewidth}
+  \captionof{figure}{\scriptsize{The calculated electronic band structure of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} where the CPs are identified along the main symmetry directions.}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{New results: absorption and band-gap in Cu-based materials}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results: band structure and density-of-states in Cu-based materials}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results:  quantum efficiency in Cu-based materials solar cells}
+\end{frame}
+
+
+\section{Summary}
+\begin{frame}
+\frametitle{Summary}
+
+ 
+
+\begin{itemize}
+ 
+ \item Previous work:
+
+
+ \begin{itemize}
+\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
+\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
+\end{itemize}
+
+
+
+
+ \item Previous work:
+
+
+ \begin{itemize}
+\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
+\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
+\end{itemize}
+
+
+
+
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Acknowledgements}
+   \begin{itemize}
+    \item I would like to express my sincere appreciation to my supervisor Prof. Clas Persson for his academic encouragement and professional guidance. 
+    \item I would like to thank all the group colleagues in Stockholm and Oslo for helpful research discussions and chatting.  I would like to thank all other people at the Department of Material Sciences and Engineering at KTH for creating a nice working atmosphere.
+    \item  The China Scholarship Council, the Swedish Energy Agency, the Swedish Research Council, Stiftelsen Axel Hultgrens fond,  Olle Erikssons stiftelse for materialteknik, and KTH Computational Science and Engineering Centre (KCSE) 
+are acknowledged for financial support.
+   \end{itemize}
+  
+\end{frame}
+
+
+
+\end{document}
