@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  6 MAY 2015 09:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  7 MAY 2015 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -969,9 +969,6 @@ Package: bbding 1999/04/15 v1.01 Dingbats symbols
 \@mpm@count=\count186
 ) (./lic.aux
 
-LaTeX Warning: Label `fig:test2' multiply defined.
-
-
 LaTeX Warning: Label `fig:test1' multiply defined.
 
 
@@ -985,6 +982,18 @@ LaTeX Warning: Label `fig:test2' multiply defined.
 
 
 LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
 
 
 LaTeX Warning: Label `fig:test2' multiply defined.
@@ -1118,7 +1127,7 @@ Package epstopdf Info: Source file: <figures/kth.eps>
 to.pdf figures/kth.eps>
 (epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
-<figures/kth-eps-converted-to.pdf, id=20, 286.06876pt x 286.06876pt>
+<figures/kth-eps-converted-to.pdf, id=16, 286.06876pt x 286.06876pt>
 File: figures/kth-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/kth-eps-converted-to.pdf>
@@ -1149,74 +1158,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [4
 
 ]
-Package epstopdf Info: Source file: <figures/paper2figure1.eps>
-(epstopdf)                    date: 2015-05-05 09:33:15
-(epstopdf)                    size: 105511 bytes
-(epstopdf)             Output file: <figures/paper2figure1-eps-converted-to.pdf
->
-(epstopdf)                    date: 2015-05-05 09:33:16
-(epstopdf)                    size: 70044 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure1-eps-
-converted-to.pdf figures/paper2figure1.eps>
-(epstopdf)             \includegraphics on input line 161.
+Package epstopdf Info: Source file: <figures/paper1.eps>
+(epstopdf)                    date: 2015-05-06 16:23:07
+(epstopdf)                    size: 6279796 bytes
+(epstopdf)             Output file: <figures/paper1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 18:25:52
+(epstopdf)                    size: 858798 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper1-eps-convert
+ed-to.pdf figures/paper1.eps>
+(epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/paper2figure1-eps-converted-to.pdf, id=59, 333.245pt x 494.84875pt>
-File: figures/paper2figure1-eps-converted-to.pdf Graphic file (type pdf)
+<figures/paper1-eps-converted-to.pdf, id=55, 686.565pt x 361.35pt>
+File: figures/paper1-eps-converted-to.pdf Graphic file (type pdf)
 
-<use figures/paper2figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/paper2figure1-eps-converted-to.pdf used on inp
-ut line 161.
-(pdftex.def)             Requested size: 80.61172pt x 119.70242pt.
-Package epstopdf Info: Source file: <figures/copyfigure2_paper2.eps>
-(epstopdf)                    date: 2015-05-05 09:33:16
-(epstopdf)                    size: 82629 bytes
-(epstopdf)             Output file: <figures/copyfigure2_paper2-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2015-05-05 09:33:16
-(epstopdf)                    size: 55913 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/copyfigure2_paper2
--eps-converted-to.pdf figures/copyfigure2_paper2.eps>
-(epstopdf)             \includegraphics on input line 161.
-Package epstopdf Info: Output file is already uptodate.
+<use figures/paper1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper1-eps-converted-to.pdf used on input line
+ 148.
+(pdftex.def)             Requested size: 342.2953pt x 180.15074pt.
 
-<figures/copyfigure2_paper2-eps-converted-to.pdf, id=60, 340.27126pt x 492.8412
-5pt>
-File: figures/copyfigure2_paper2-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/copyfigure2_paper2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/copyfigure2_paper2-eps-converted-to.pdf used o
-n input line 161.
-(pdftex.def)             Requested size: 80.61172pt x 116.75772pt.
-Package epstopdf Info: Source file: <figures/paper1figure3.eps>
-(epstopdf)                    date: 2015-05-05 09:33:16
-(epstopdf)                    size: 174659 bytes
-(epstopdf)             Output file: <figures/paper1figure3-eps-converted-to.pdf
->
-(epstopdf)                    date: 2015-05-05 09:33:16
-(epstopdf)                    size: 114186 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/paper1figure3-eps-
-converted-to.pdf figures/paper1figure3.eps>
-(epstopdf)             \includegraphics on input line 161.
-Package epstopdf Info: Output file is already uptodate.
+Overfull \vbox (3.2871pt too high) detected at line 148
+ []
 
-<figures/paper1figure3-eps-converted-to.pdf, id=61, 333.245pt x 492.84125pt>
-File: figures/paper1figure3-eps-converted-to.pdf Graphic file (type pdf)
+[5
 
-<use figures/paper1figure3-eps-converted-to.pdf>
-Package pdftex.def Info: figures/paper1figure3-eps-converted-to.pdf used on inp
-ut line 161.
-(pdftex.def)             Requested size: 80.61172pt x 119.2168pt.
- [5
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
-as been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.161 \end{frame}
-                  <./figures/paper2figure1-eps-converted-to.pdf> <./figures/cop
-yfigure2_paper2-eps-converted-to.pdf> <./figures/paper1figure3-eps-converted-to
-.pdf>]
+ <./figures/paper1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/paper2figure4.eps>
 (epstopdf)                    date: 2015-05-05 09:33:16
 (epstopdf)                    size: 122389 bytes
@@ -1226,22 +1192,16 @@ Package epstopdf Info: Source file: <figures/paper2figure4.eps>
 (epstopdf)                    size: 64728 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/paper2figure4-eps-
 converted-to.pdf figures/paper2figure4.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/paper2figure4-eps-converted-to.pdf, id=106, 389.455pt x 545.03625pt>
+<figures/paper2figure4-eps-converted-to.pdf, id=73, 389.455pt x 545.03625pt>
 File: figures/paper2figure4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/paper2figure4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/paper2figure4-eps-converted-to.pdf used on inp
-ut line 184.
-(pdftex.def)             Requested size: 145.47653pt x 203.5897pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.184 \end{frame}
-                 
+ut line 175.
+(pdftex.def)             Requested size: 119.80283pt x 167.66211pt.
 Package epstopdf Info: Source file: <figures/paper2figure6.eps>
 (epstopdf)                    date: 2015-05-05 09:33:16
 (epstopdf)                    size: 112671 bytes
@@ -1251,75 +1211,46 @@ Package epstopdf Info: Source file: <figures/paper2figure6.eps>
 (epstopdf)                    size: 57988 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/paper2figure6-eps-
 converted-to.pdf figures/paper2figure6.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/paper2figure6-eps-converted-to.pdf, id=107, 391.4625pt x 567.11874pt>
+<figures/paper2figure6-eps-converted-to.pdf, id=74, 391.4625pt x 567.11874pt>
 File: figures/paper2figure6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/paper2figure6-eps-converted-to.pdf>
 Package pdftex.def Info: figures/paper2figure6-eps-converted-to.pdf used on inp
-ut line 184.
-(pdftex.def)             Requested size: 140.34232pt x 203.31454pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.184 \end{frame}
-                 
-Overfull \vbox (10.7816pt too high) detected at line 184
+ut line 175.
+(pdftex.def)             Requested size: 119.80283pt x 173.55507pt.
+
+Overfull \vbox (7.24696pt too high) detected at line 175
  []
 
 [6
 
  <./figures/paper2figure4-eps-converted-to.pdf> <./figures/paper2figure6-eps-co
-nverted-to.pdf>] <figures/APL1b.jpg, id=138, 489.62926pt x 441.44925pt>
+nverted-to.pdf>] <figures/APL1b.jpg, id=107, 489.62926pt x 441.44925pt>
 File: figures/APL1b.jpg Graphic file (type jpg)
 
 <use figures/APL1b.jpg>
-Package pdftex.def Info: figures/APL1b.jpg used on input line 209.
+Package pdftex.def Info: figures/APL1b.jpg used on input line 200.
 (pdftex.def)             Requested size: 154.03183pt x 138.87537pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.209 \end{frame}
-                  <figures/APL1a.jpg, id=139, 446.50815pt x 441.44925pt>
+l.200 \end{frame}
+                  <figures/APL1a.jpg, id=108, 446.50815pt x 441.44925pt>
 File: figures/APL1a.jpg Graphic file (type jpg)
 
 <use figures/APL1a.jpg>
-Package pdftex.def Info: figures/APL1a.jpg used on input line 209.
+Package pdftex.def Info: figures/APL1a.jpg used on input line 200.
 (pdftex.def)             Requested size: 145.47653pt x 143.8263pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-[][][][][][]|\OT1/cmss/m/n/10 The di-elec-tric func-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\OT1/cmss/m/n/10 tion spec-tra for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\OT1/cmss/m/n/10 CuIn$[]$Ga$[]$Se$[]$ cal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\OT1/cmss/m/n/10 cu-lated by FPLAPW
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.209 \end{frame}
-                 
-Overfull \vbox (7.56728pt too high) detected at line 209
- []
-
-[7
+l.200 \end{frame}
+                  [7
 
  <./figures/APL1b.jpg> <./figures/APL1a.jpg>]
 Package epstopdf Info: Source file: <figures/APL4.eps>
@@ -1330,21 +1261,21 @@ Package epstopdf Info: Source file: <figures/APL4.eps>
 (epstopdf)                    size: 229598 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/APL4-eps-converted
 -to.pdf figures/APL4.eps>
-(epstopdf)             \includegraphics on input line 234.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/APL4-eps-converted-to.pdf, id=149, 343.2825pt x 394.47375pt>
+<figures/APL4-eps-converted-to.pdf, id=118, 343.2825pt x 394.47375pt>
 File: figures/APL4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/APL4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/APL4-eps-converted-to.pdf used on input line 2
-34.
+25.
 (pdftex.def)             Requested size: 138.6277pt x 159.29752pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \end{frame}
+l.225 \end{frame}
                  
 Package epstopdf Info: Source file: <figures/APL3.eps>
 (epstopdf)                    date: 2015-05-05 09:33:16
@@ -1354,18 +1285,18 @@ Package epstopdf Info: Source file: <figures/APL3.eps>
 (epstopdf)                    size: 158593 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/APL3-eps-converted
 -to.pdf figures/APL3.eps>
-(epstopdf)             \includegraphics on input line 234.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/APL3-eps-converted-to.pdf, id=150, 415.5525pt x 249.93375pt>
+<figures/APL3-eps-converted-to.pdf, id=119, 415.5525pt x 249.93375pt>
 File: figures/APL3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/APL3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/APL3-eps-converted-to.pdf used on input line 2
-34.
+25.
 (pdftex.def)             Requested size: 188.26346pt x 113.23187pt.
 
-Underfull \hbox (badness 1259) in paragraph at lines 234--234
+Underfull \hbox (badness 1259) in paragraph at lines 225--225
 [][][][][][]|\OT1/cmss/m/n/8 The cal-cu-lated elec-tronic band struc-ture of
  []
 
@@ -1373,27 +1304,223 @@ pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \end{frame}
+l.225 \end{frame}
                  
-Overfull \vbox (13.73941pt too high) detected at line 234
+Overfull \vbox (18.73941pt too high) detected at line 225
  []
 
 [8
 
- <./figures/APL4-eps-converted-to.pdf> <./figures/APL3-eps-converted-to.pdf>] [
-9
+ <./figures/APL4-eps-converted-to.pdf> <./figures/APL3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/ABS.eps>
+(epstopdf)                    date: 2015-05-06 10:05:51
+(epstopdf)                    size: 49593 bytes
+(epstopdf)             Output file: <figures/ABS-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:51:05
+(epstopdf)                    size: 43622 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ABS-eps-converted-
+to.pdf figures/ABS.eps>
+(epstopdf)             \includegraphics on input line 255.
+Package epstopdf Info: Output file is already uptodate.
+<figures/ABS-eps-converted-to.pdf, id=158, 557.08125pt x 766.865pt>
+File: figures/ABS-eps-converted-to.pdf Graphic file (type pdf)
 
-] [10
+<use figures/ABS-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ABS-eps-converted-to.pdf used on input line 25
+5.
+(pdftex.def)             Requested size: 112.95807pt x 155.48824pt.
 
-] [11
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[]
+ []
 
-] (./lic.toc)
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12
+Overfull \hbox (23.95796pt too wide) in paragraph at lines 255--255
+[] 
+ []
 
-]
-[13] [14
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.255 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/ABSto1ev.eps>
+(epstopdf)                    date: 2015-05-06 10:04:49
+(epstopdf)                    size: 25046 bytes
+(epstopdf)             Output file: <figures/ABSto1ev-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:51:05
+(epstopdf)                    size: 17814 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/ABSto1ev-eps-conve
+rted-to.pdf figures/ABSto1ev.eps>
+(epstopdf)             \includegraphics on input line 255.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/ABSto1ev-eps-converted-to.pdf, id=159, 550.055pt x 769.87625pt>
+File: figures/ABSto1ev-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/ABSto1ev-eps-converted-to.pdf>
+Package pdftex.def Info: figures/ABSto1ev-eps-converted-to.pdf used on input li
+ne 255.
+(pdftex.def)             Requested size: 112.95807pt x 158.09584pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.255 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/bandgap.eps>
+(epstopdf)                    date: 2015-05-06 10:20:20
+(epstopdf)                    size: 401656 bytes
+(epstopdf)             Output file: <figures/bandgap-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:51:05
+(epstopdf)                    size: 44537 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/bandgap-eps-conver
+ted-to.pdf figures/bandgap.eps>
+(epstopdf)             \includegraphics on input line 255.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/bandgap-eps-converted-to.pdf, id=160, 370.38374pt x 523.9575pt>
+File: figures/bandgap-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/bandgap-eps-converted-to.pdf>
+Package pdftex.def Info: figures/bandgap-eps-converted-to.pdf used on input lin
+e 255.
+(pdftex.def)             Requested size: 112.95807pt x 159.78682pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.255 \end{frame}
+                  [9
+
+ <./figures/ABS-eps-converted-to.pdf> <./figures/ABSto1ev-eps-converted-to.pdf>
+ <./figures/bandgap-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/bs.eps>
+(epstopdf)                    date: 2015-05-06 11:44:30
+(epstopdf)                    size: 7216834 bytes
+(epstopdf)             Output file: <figures/bs-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:54:59
+(epstopdf)                    size: 417137 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/bs-eps-converted-t
+o.pdf figures/bs.eps>
+(epstopdf)             \includegraphics on input line 266.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/bs-eps-converted-to.pdf, id=186, 623.32875pt x 542.025pt>
+File: figures/bs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/bs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/bs-eps-converted-to.pdf used on input line 266
+.
+(pdftex.def)             Requested size: 222.48985pt x 193.46645pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \end{frame}
+                 
+Overfull \vbox (1.40834pt too high) detected at line 266
+ []
+
+[10
+
+ <./figures/bs-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/dos1.eps>
+(epstopdf)                    date: 2015-05-06 15:43:22
+(epstopdf)                    size: 5742113 bytes
+(epstopdf)             Output file: <figures/dos1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:56:26
+(epstopdf)                    size: 497739 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/dos1-eps-converted
+-to.pdf figures/dos1.eps>
+(epstopdf)             \includegraphics on input line 277.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/dos1-eps-converted-to.pdf, id=206, 695.59875pt x 542.025pt>
+File: figures/dos1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/dos1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/dos1-eps-converted-to.pdf used on input line 2
+77.
+(pdftex.def)             Requested size: 273.83728pt x 213.37384pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.277 \end{frame}
+                  [11
+
+ <./figures/dos1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/dos2.eps>
+(epstopdf)                    date: 2015-05-06 15:43:24
+(epstopdf)                    size: 5965788 bytes
+(epstopdf)             Output file: <figures/dos2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-06 17:56:55
+(epstopdf)                    size: 498192 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/dos2-eps-converted
+-to.pdf figures/dos2.eps>
+(epstopdf)             \includegraphics on input line 288.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/dos2-eps-converted-to.pdf, id=222, 695.59875pt x 542.025pt>
+File: figures/dos2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/dos2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/dos2-eps-converted-to.pdf used on input line 2
+88.
+(pdftex.def)             Requested size: 273.83728pt x 213.37384pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.288 \end{frame}
+                  [12
+
+ <./figures/dos2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/QE1.eps>
+(epstopdf)                    date: 2015-05-07 19:13:53
+(epstopdf)                    size: 2379030 bytes
+(epstopdf)             Output file: <figures/QE1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-07 21:18:50
+(epstopdf)                    size: 249816 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/QE1-eps-converted-
+to.pdf figures/QE1.eps>
+(epstopdf)             \includegraphics on input line 298.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/QE1-eps-converted-to.pdf, id=238, 722.7pt x 289.08pt>
+File: figures/QE1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/QE1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/QE1-eps-converted-to.pdf used on input line 29
+8.
+(pdftex.def)             Requested size: 342.2953pt x 136.91742pt.
+ [13
+
+ <./figures/QE1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/QE2.eps>
+(epstopdf)                    date: 2015-05-07 19:14:44
+(epstopdf)                    size: 1073344 bytes
+(epstopdf)             Output file: <figures/QE2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-07 21:18:51
+(epstopdf)                    size: 166024 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/QE2-eps-converted-
+to.pdf figures/QE2.eps>
+(epstopdf)             \includegraphics on input line 308.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/QE2-eps-converted-to.pdf, id=251, 704.6325pt x 316.18124pt>
+File: figures/QE2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/QE2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/QE2-eps-converted-to.pdf used on input line 30
+8.
+(pdftex.def)             Requested size: 342.2953pt x 153.59377pt.
+ [14
+
+ <./figures/QE2-eps-converted-to.pdf>] [15
+
+] [16
 
 ]
 \tf@nav=\write7
@@ -1405,13 +1532,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@snm=\write9
 \openout9 = `lic.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 358.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 358.
  (./lic.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 358.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 358.
 Package rerunfilecheck Info: File `lic.out' has not changed.
-(rerunfilecheck)             Checksum: D40744CC849EB7A7B812BCCE681E3FC8;42.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1420,16 +1547,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 358.
  ) 
 Here is how much of TeX's memory you used:
- 21458 strings out of 494989
- 423820 string characters out of 6180577
- 527981 words of memory out of 5000000
- 24120 multiletter control sequences out of 15000+600000
- 14547 words of font info for 56 fonts, out of 8000000 for 9000
+ 21467 strings out of 494989
+ 423906 string characters out of 6180577
+ 527783 words of memory out of 5000000
+ 24121 multiletter control sequences out of 15000+600000
+ 15197 words of font info for 58 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,60p,413b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,57p,413b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
@@ -1438,10 +1565,11 @@ dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmssbx10.pfb>
-Output written on lic.pdf (14 pages, 3791080 bytes).
+fonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmssi10.pfb>
+Output written on lic.pdf (16 pages, 6342308 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -54,6 +54,8 @@
 \renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
 
 
+\setbeamertemplate{itemize/enumerate body begin}{\large}
+\setbeamertemplate{itemize/enumerate subbody begin}{\large}
 
     
 \begin{document}
@@ -85,9 +87,11 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 %\includegraphics[height=0.65\textwidth]{figures/defence_figs_1.eps}
 \begin{itemize}
  \item Commercial materials: \\
-  Cu(In,Ga)Se\textsubscript{2} and Cu\textsubscript{2}(Zn, Sn)Se\textsubscript{4}.
- \item High absorption materials: Cu(Sb,Bi)(S,Se)\textsubscript{2} and Cu\textsubscript{3}(Sb,Bi)(S,Se)\textsubscript{3}.
- \item Noval materials: Cu\textsubscript{2}S, SnS, Cu\textsubscript{2}SnS\textsubscript{3}, and Cu\textsubscript{4}SnS\textsubscript{4}.
+  \hspace{2.5cm} Cu(In,Ga)Se\textsubscript{2} and Cu\textsubscript{2}(Zn, Sn)Se\textsubscript{4}.
+ \item High absorption materials: \\
+   \hspace{2.5cm} Cu(Sb,Bi)(S,Se)\textsubscript{2} and Cu\textsubscript{3}(Sb,Bi)(S,Se)\textsubscript{3}.
+ \item Noval materials: \\
+  \hspace{2.5cm} Cu\textsubscript{2}S, SnS, Cu\textsubscript{2}SnS\textsubscript{3} and Cu\textsubscript{4}SnS\textsubscript{4}.
  \end{itemize}
 \end{center}
 \end{frame}
@@ -96,10 +100,11 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 
 \begin{frame}
 \frametitle{Motivation}
+{\large We want to understand Cu-based materials for solar cells. }
 \begin{center}
 \begin{itemize}
- \item We want to understand materails Cu-X-(Se,S), where X = In, Ga, Zn, Sn, Sb, Bi.
- \item Why some have high or low absorption?
+ \item Why some materials have high or low absorption coefficient?
+ \item How good band-gap can we obtain using theoretical calculation?
  \end{itemize}
 \end{center}
 \end{frame}
@@ -109,82 +114,33 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \frametitle{Computational methods}
 %\begin{columns}[c]
 \begin{itemize}
- \item Density-functional theory (DFT).
- \item Beyond DFT, such as GW approximation and Heyd-Scuseria-Ernzerhof (HSE) hybrid functional. 
+ \item Fundamental methods
+ 
+  \begin{itemize}
+  \item Density-functional theory (DFT). 
+  \item Kohn-Sham (KS) equation. 
+ \end{itemize}
+ \item Beyond DFT
+ \begin{itemize}
+  \item GW approximation. 
+  \item Heyd-Scuseria-Ernzerhof (HSE) hybrid functional. 
+ \end{itemize}
  \end{itemize}
 
 \end{frame}
 
 
-
-\begin{frame}
- \frametitle{Paper 1: parameterization of band structure for CIGS}
-  \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.8\linewidth]{figures/paper2figure1.eps}
-  \captionof{figure}{\tiny{ Band structure along four directions. Circles(fbp), Dotted(pba), and solid lines (calculation).}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-
-  \centering
-  \includegraphics[width=.8\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\tiny{Close-up of the left figure.}}
-  \label{fig:test2}
-\end{minipage}
-\end{figure}
-
-\end{frame}
+\captionsetup{width=0.3\linewidth}
 
 
 \begin{frame}
-  \frametitle{Paper 1: non-parabolicity of the energy bands}
-
+  \frametitle{Previous results 1: parameterization of band structure}
+full band parameterization: fbp \\
+parabolic band approximation: pba.
   
   \begin{figure}
 \centering
-\begin{minipage}{.3\textwidth}
-  \centering
-  \includegraphics[width=.785\linewidth]{figures/paper2figure1.eps}
-  \captionof{figure}{\tiny{Band structure along four directions. Circles(fbp), Dotted(pba), and solid lines (calculation).}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.3\textwidth}
-  \centering
-  \includegraphics[width=.785\linewidth]{copyfigure2_paper2.eps}
-    \captionof{figure}{\tiny{Close-up of electronic band structure.}}
-  \label{fig:test2}
-\end{minipage}
-\begin{minipage}{.3\textwidth}
-  \centering
-  \includegraphics[width=.785\linewidth]{figures/paper1figure3.eps}
-    \captionof{figure}{\tiny{Inverse of effective electron and hole masses.}}
-  \label{fig:test2}
-\end{minipage}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Paper 1: non-parabolicity of the energy bands}
-
-  
-  \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.85\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\tiny{Close-up of electronic band structure.}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.79\linewidth]{figures/fermi_sphere_cii.eps}
-  \captionof{figure}{\tiny{Constant energy surfaces.}}
-  \label{fig:test2}
-\end{minipage}
+\includegraphics[width=1\linewidth]{figures/paper1.eps}
 \end{figure}
 \end{frame}
 
@@ -192,105 +148,29 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 
 
 \begin{frame}
-   \frametitle{Paper 2: density-of-states (DOS)}
-In the case of the pba, the density-of-states can be written as
-
-\begin{equation}\label{dosjp}
- g_j^{pba}(E) = \frac{1}{2\pi^2} \big(\frac{2m_j^{DOS}}{\hbar^2}\big)^{3/2} \sqrt{|E-E_j(\textbf{0})|}.
-\end{equation}
- 
-
-In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-parabolic energy bands, the energy-dependent DOS mass ($m_{v/c}^{DOS}$) is defined as
-
-\begin{equation}\label{dosmass}
- g_{v/c}(E) = \sum\limits_j g_j(E) = \frac{1}{2\pi^2} \big(\frac{2m_{v/c}^{DOS}(E)}{\hbar^2}\big)^{3/2} \sqrt{|E-E_{v1/c1}(\textbf{0})|}.
-\end{equation}
-
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Paper 2: density-of-states (DOS) and DOS mass}
+  \frametitle{Previous results 1: density-of-states (DOS) and DOS mass}
  \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.85\linewidth]{figures/paper2figure4.eps}
-  \captionof{figure}{\tiny{Total DOS of the VBs and CB.}}
+  \captionof{figure}{\tiny{Total DOS of the VBs and CB by pba and fbp.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.82\linewidth]{figures/paper2figure6.eps}
-  \captionof{figure}{\tiny{DOS mass. \quad \quad \quad \quad \quad \quad}}
+  \captionof{figure}{\tiny{DOS mass by fbp. \quad \quad \quad \quad \quad \quad}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
-
-
-
   
 \end{frame}
 
+
+\captionsetup{width=0.4\linewidth}
 \begin{frame}
-  \frametitle{Paper 2: intrinsic carrier concentration}
-  
-   \captionsetup{width=1\linewidth}
- \begin{figure}
-
-  \centering
-  \includegraphics[width=.5\linewidth]{figures/paper2figure7b.eps}
-  \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
-\end{figure}
-
-  
-\end{frame}
-
-
-
-
-
-
-\begin{frame} 
-  \frametitle{Paper 2: carrier concentration in different temperatures}
-  
-      \begin{center}
-\includegraphics[height=0.4\textwidth]{figures/defence_figs_7.eps}
-\end{center}
-  
-  
-  \end{frame}
-  
-
-
-\begin{frame} 
-  \frametitle{Paper 2: carrier concentration in $p$-type for CIGS}
-
-  
-  \captionsetup{width=1\linewidth}
-  
-
-
-\begin{figure}
-
-  \centering
-
-  \includegraphics[width=1.0\linewidth]{figures/paper2figure9.eps}
-  \caption{\scriptsize{Free carrier concentration as function of the temperature in $p$-type for $\mathrm{CuInSe_2}$, $\mathrm{CuIn_{0.5}Ga_{0.5}Se_2}$, and $\mathrm{CuGaSe_2}$.
-    The effective doping concentration $N_A = 10^{13}, 10^{14}, 10^{15}$,..., and  $10^{19}$ acceptors cm\textsuperscript{$-$3} are considered. Solid and dotted lines represents the fbp and the pba, respectively.}}
-
-\end{figure}
-  
-\end{frame}
-
-
-
-\begin{frame}
-  \frametitle{Paper 3: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
-
-  
-  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient.
-
+  \frametitle{Previous results 2: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
    \begin{figure}
 \centering
@@ -305,7 +185,7 @@ at 40 K (solid line) and 300 K (dashed lines).}}
   \centering
   \includegraphics[width=.85\linewidth]{figures/APL1a.jpg}
   \captionof{figure}{{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
-calculated by FPLAPW method at 0 K.}}
+calculated at 0 K.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -314,22 +194,10 @@ calculated by FPLAPW method at 0 K.}}
 
 
 
-\begin{frame}
-\frametitle{Paper 3: interband critical point (CP)}
-\centering
-\captionsetup{width=1\linewidth}
-\begin{figure}
-  \includegraphics[width=.5\linewidth]{figures/APL2.eps}
-  \caption{\scriptsize{Energies of each interband CP are indicated by arrows and labeled in a numeric and alphabetic order.}}
-\end{figure}
-\captionsetup{width=1\linewidth}
-
-
-\end{frame}
 
 
 \begin{frame}
-  \frametitle{Paper 3: analysis of the imaginary part of dielectric function}
+  \frametitle{Previous results 2: analysis of the imaginary part of dielectric function}
 
      \begin{figure}
 \centering
@@ -350,6 +218,66 @@ calculated by FPLAPW method at 0 K.}}
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{New results: absorption and band-gap in Cu-based materials}
+    \begin{figure}
+\centering
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{figures/ABS.eps}
+  \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{figures/ABSto1ev.eps}
+  \captionsetup{width=0.9\linewidth}
+  \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test2}
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+  \centering
+  \includegraphics[width=1.0\linewidth]{figures/bandgap.eps}
+  \captionsetup{width=0.9\linewidth}
+  \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test2}
+\end{minipage}
+
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results: band structure in Cu-based materials}
+   \begin{figure}
+   \centering
+  \includegraphics[width=0.70\linewidth]{figures/bs.eps}
+  \end{figure}
+ % \captionsetup{width=0.7\linewidth}
+  \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test2}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results: density-of-states in Cu-based materials}
+   \centering
+  \includegraphics[width=0.7\linewidth]{figures/dos1.eps}
+  \captionsetup{width=0.7\linewidth}
+ % \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test2}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results: density-of-states in Cu-based materials}
+   \centering
+  \includegraphics[width=0.7\linewidth]{figures/dos2.eps}
+  \captionsetup{width=0.7\linewidth}
+ % \captionof{figure}{\scriptsize{aaa.}}
+  \label{fig:test2}
+\end{frame}
+
+\begin{frame}
+  \frametitle{New results:  quantum efficiency in Cu-based materials solar cells}
+\end{frame}
 
 
 \section{Summary}
@@ -360,63 +288,36 @@ calculated by FPLAPW method at 0 K.}}
 
 \begin{itemize}
  
- \item Paper 1:
+ \item Previous work:
 
 
  \begin{itemize}
-\item Eergy bands are non-parabolic even very close to the $\Gamma$-point.
-\item The full band parameterization is valid around 0.5 eV below the valence band maximum and 0.5 eV above the conduction band minimum.
-\item The effective masses are \textbf{k}-dependency.
-\end{itemize}
-
- \item Paper 2:
- 
- \begin{itemize}
-\item Energy-dependent DOS mass is introduced.
-\item The transition from the freeze-out region to the extrinsic region occurs well below the room temperature for uncompensated acceptor concentration below 
-around 10\textsuperscript{17} cm\textsuperscript{$-$3}.
-\end{itemize}
-
-\item Paper 3:
-
- \begin{itemize}
+\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
 \item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
-\item  Electronic origins of the observed critical-point features are discussed.
-\item  The pairs of valence and conduction bands along the main symmetry directions of Brillouin zone are suggested for the major CP features.
-\end{itemize}
-
 \end{itemize}
 
 
 
-\end{frame}
 
-\section{Future perspectives}
-\begin{frame}
- \frametitle{Future perspectives}
+ \item Previous work:
+
+
  \begin{itemize}
-
-  \item The cost and scarcity of indium in the CIGS device is a problem, and copper zinc tin selenide/sulfide (CZT(S,Se))
-can therefore be alternative to CIGS due to the low cost and non-toxicity elements. 
-
-\captionsetup{width=1\linewidth}
-\begin{figure}
- \centering
-  \includegraphics[width=0.5\linewidth]{figures/price.eps}
-  \caption{\scriptsize{Abundance and price of Cu, In, Ga, S, Sn, and Zn in Earth's crust (parts per million (ppm) in mass; 10,000 ppm = 1\%).}}
-\end{figure}
-\captionsetup{width=0.4\linewidth}
-  
-  
-
-  \item If there are other similar materials that are of interest. CIGS and CZT(S,Se) can be 
-considered to be in a class denoted as Cu-XY-chalcogenide, where X and Y are two cation elements that replace the 
-group-III In or Ga in CIGS.
+\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
+\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
 \end{itemize}
- 
+
+
+
+
+\end{itemize}
+
+
+
 \end{frame}
 
-\section{Acknowledgements}
+
+
 \begin{frame}
   \frametitle{Acknowledgements}
    \begin{itemize}
@@ -428,161 +329,6 @@ are acknowledged for financial support.
   
 \end{frame}
 
-
-\begin{comment}
-\section{References}
-\begin{frame}
-  \begin{itemize}
-   \item http://newswirengr.com/2015/02/18/federal-government-to-produce-500-megawatts-of-power-from-coal-plant-in-enugu/
-   \item http://www.petroleum.co.uk/composition
-   \item http://psc.wi.gov/utilityInfo/gas/index-naturalGas.htm
-   \item http://www.earthtimes.org/energy/renewable-energy-rules/2364/
-   \item http://inexhaustibleresources.org/
-   \item http://imgkid.com/sun-in-the-sky-wallpaper.shtml
-   \item http://www.solar-thermal.com/
-   \item http://newscenter.lbl.gov/2009/04/20/hydrogen-highway-nano-road/
-  \end{itemize}
-\end{comment}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=structure.fg!25]
-\begin{frame}
- \begin{center}
-{\huge \emph{\textcolor[rgb]{0.50,0.00,1.00}{Thank  ~you ~for ~your ~attention!}}}\\
-\vspace{5mm}\large
-\begin{tabular}{cc}
-   %{Student}:
-   & \textsf{Rongzhen Chen}\\
-  %{Co-student}: & \textsf{L. Delczeg} \\
- % {Supervisor}: & L. Vitos \\
-        %         & Stockholm, 100 44, Sweden \\
-    %{\sc Email}:
-    & \href{mailto:Rongzhen.Chen@mse.kth.se}{\color{blue!70}Rongzhen.Chen@mse.kth.se}\\
-\end{tabular}
- \end{center}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%% not part of talk %%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
- \frametitle{Full-potential linearised augmented-plane wave (FPLAPW)}
- Unit cell is divided into two regions: one is sphere region called muffin tin (MT) region, which is
-defined by the center of atom, but non-overlap each sphere; the remaining region is called interstitial ($I$)
-region.
-\captionsetup{width=1\linewidth}
-\begin{figure}
-\begin{center}
- \includegraphics[scale=0.4]{figures/unitcell.eps} 
-\end{center}
- \caption{Partition of the unit cell.}
-\end{figure}
-\captionsetup{width=0.4\linewidth}
-\end{frame}
-
-\begin{frame}
-The KS wavefunction can be expanded by a set of basis functions 
- \begin{equation}
- \Psi^{KS}_{i,\textbf{k}}(\textbf{r}) = \sum\limits_{\textbf{G}}^{N_G} C_{i,\textbf{k}+\textbf{G}}\phi_{\textbf {k}+\textbf{G}}^{LAPW} ({\textbf r}).
-\end{equation}
-
-Here
-
-\begin{equation}
-\phi^{LAPW}_{\textbf{k}+\textbf{G}} (\textbf{r}) = 
-\begin{cases} \frac {1}{\sqrt{\Omega}} e^{i(\textbf{k}+\textbf{G})\textbf{r}} & \quad \mbox{if $\textbf{r} \in {I} $}
-\\
-\sum\limits_{\alpha}\sum\limits_{{\ell}m} f_{{\ell}{m}} (r_{\alpha},\textbf{k}+\textbf{G}, \epsilon_{\ell,\alpha}) Y_{{\ell}m}(\hat{\textbf{r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
-\end{cases}
-\end{equation}
-
-The potential in the FPLAPW method is also divided into two regions, the MT region and the $I$ region.
-\begin{equation}
-V(\textbf{r}) = 
-\begin{cases} \sum\limits_{\textbf G} V_{\textbf G} e^{i {\textbf G} {\textbf {r}  }} & \quad \mbox{if $\textbf{r} \in {I} $}
-\\
- \sum_{{\ell}m} V_{{\ell}m}^{\alpha} (r_{\alpha}) Y_{{\ell}m}(\hat{{\textbf r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
-\end{cases}
-\end{equation}
-
-Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by electron density.
-\end{frame}
-
-
-\begin{frame}
- \frametitle{The process for solving KS equation}
- 
- \captionsetup{width=1\linewidth}
- %%%%%%%%%%%%%%%%%%%%figure
-\tikzstyle{decision} = [diamond, draw, fill=white!20,
-    text width=10em, text badly centered, node distance=2.5cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=white!20,
-    text width=12em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.4 , node distance = 2.5cm,transform shape]
-    % Place nodes
-    \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
-    \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
-    \node [block, below of=potential, node distance=2.5cm] (KS) {Solve Kohn-Sham equation};
- %   \node [block, below of=KS, node distance=2.5cm] (fermi) {Calculate Fermi energy $E_F$};
-    \node [block, below of=KS, node distance=2.5cm] (density) {Calculate new density $\rho^{new}(\textbf{r})$};
-    \node [block, left of=KS, node distance=6cm] (update) {Determine the mix density $\rho^{i+1}(\textbf{r}) = F (\rho^{i}(\textbf{r}), \rho^{new}(\textbf{r})) $};
-    \node [decision, below of=density, node distance=3.8cm] (converge) {$E[\rho]$ Converged? \\ $\rho(\textbf{r})$ == $\rho^{new}(\textbf{r})$?};
-    \node [block, below of=converge, node distance=3.8cm] (done) {Finished};
-    % Draw edges
-    \path [line] (init) -- (potential);
-    \path [line] (potential) -- (KS);
-    \path [line] (KS) -- (density);
- %   \path [line] (fermi) -- (density);
-    \path [line] (density) -- (converge);
-    \path [line] (converge) -| node [pos=0.2, above, color=black] {No} (update);
-    \path [line] (update) |- (potential);
-    \path [line] (converge) -- node [pos=0.2, right, color=black] {Yes}(done);
-
-\end{tikzpicture}
-\caption{\scriptsize{Flow chart of the $(i+1)$:th iteration for solving KS equation.}}
-\label{fig:bo}
-\end{figure}
-\captionsetup{width=0.4\linewidth}
-\end{frame}
-
-
- \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure7a.eps}
-  \caption{\scriptsize{Band-gap energy and Fermi energy for $1 \leq T \leq 900$ K of intrinsic CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2},
-    determined from the fbp. The Fermi distribution $f(E)$ of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} is presented for T = 300 K and 600 K}.}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure7b.eps}
-  \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
-  \label{fig:test2}
-\end{minipage}
-\end{figure}
-
-
-\begin{figure}
-\begin{minipage}[c][200cm][t]{0.7\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure8.eps}
-  \caption{\scriptsize{Fermi level as function of the temperature $20 \leq T \leq 600$ of $p$-type CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} for the effective
-    doping concentration $N_A$ = $10^{13}$, $10^{14}$, $10^{15}$, $\cdot$, and $10^{19}$ acceptors cm\textsuperscript{$-$3}. Dashed lines represent the VBM with respect to the intrinsic Fermi level. Solid and dotted lines represents the fbp and the pba, respectively.}}
-  \label{fig:test2}
-  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
-  \caption{test figure three}
-  \label{fig:test3}
-\end{minipage}
-\end{figure}
 
 
 \end{document}

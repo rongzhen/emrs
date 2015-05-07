@@ -1,2 +1,1 @@
 \beamer@endinputifotherversion {3.24pt}
-\beamer@sectionintoc {1}{Summary}{12}{0}{1}
