@@ -103,6 +103,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 {\large We want to understand Cu-based materials for solar cells. }
 \begin{center}
 \begin{itemize}
+ \item What materials have relatively high absorption coefficient?
  \item Why some materials have high or low absorption coefficient?
  \item How good band-gap can we obtain using theoretical calculation?
  \end{itemize}
@@ -269,7 +270,22 @@ Submitted.
 
 \begin{frame}
   \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
-  add a model figure	
+       \begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{figures/model_1.eps}
+  \captionof{figure}{\scriptsize{}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.78\linewidth]{figures/model_4.eps}
+  \captionsetup{width=0.9\linewidth}
+  \captionof{figure}{\scriptsize{}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
 \end{frame}
 
 
@@ -284,16 +300,21 @@ Submitted.
  \end{figure}
 \end{frame}
 
+\begin{comment}
 \begin{frame}
   \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
+  Optical efficiency in each layer:
   \begin{equation}
-     A(d)=\frac{\int I(\lambda) QE(\lambda, d) d\lambda}{\int I(\lambda) d\lambda}
+     A(d_i)=\frac{\int I(\lambda) QE(\lambda, d_i) d\lambda}{\int I(\lambda) d\lambda}
   \end{equation}
 
     \begin{equation}
-     A(d)=\frac{\int I(\lambda) QE(\lambda, d) d\lambda}{\int I(\lambda) QE(\lambda, d \longrightarrow) d\lambda}
+     A'(d_i)=\frac{\int I(\lambda) QE(\lambda, d_i) d\lambda}{\int I(\lambda) QE(\lambda, d_i = \infty) d\lambda}
   \end{equation}
+  
+  Here, I($\lambda$) is the spectral power density of the AM1.5 solar spectrum with wavelength $\lambda$. QE($\lambda, d_i$) is the quantum efficiency in the corresponding layer with thickness $d_i$.
 \end{frame}
+\end{comment}
 
 
 
@@ -307,30 +328,20 @@ Submitted.
   \captionsetup{width=1\linewidth}
  % \captionof{figure}{\scriptsize{aaa.}}
  \end{figure}
- \begin{equation}
-    / \int I(\lambda) d\lambda, \int I(\lambda) QE(\lambda, d) d\lambda / \int I(\lambda)QE(\lambda, d=\infty) d\lambda
- \end{equation}
-
+ Here, I($\lambda$) is the spectral power density of the AM1.5 solar spectrum with wavelength $\lambda$. QE($\lambda, d_i$) is the quantum efficiency in the corresponding layer with thickness $d_i$.
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Summary}
+\frametitle{Summary for current work }
 \begin{itemize}
  
  \item Previous work:
 
-
- \begin{itemize}
-\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
-\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
-\end{itemize}
-
-
-
-
  \item Current work:
+ 
+ \item GW and HSE are valuable methods to calculate band-gap for semiconductor. The absolute value of band-gap error is around 0.2 eV compared with experimental values. 
 
 
  \begin{itemize}
