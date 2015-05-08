@@ -130,18 +130,21 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \end{frame}
 
 
-\captionsetup{width=0.3\linewidth}
+\captionsetup{width=0.5\linewidth}
 
 
 \begin{frame}
   \frametitle{Previous results 1: parameterization of band structure}
-full band parameterization: fbp \\
-parabolic band approximation: pba.
-  
+
+ \textit{Thin Solid Films} {\textbf {519}}, 7503 (2011). \\
+ \textit{Journal of Applied Physics} {\textbf {112}}, 103708 (2012). \\
+
+
   \begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{figures/paper1.eps}
 \end{figure}
+ \centering{full band parameterization: fbp; parabolic band approximation: pba.} \\
 \end{frame}
 
 
@@ -149,20 +152,13 @@ parabolic band approximation: pba.
 
 \begin{frame}
   \frametitle{Previous results 1: density-of-states (DOS) and DOS mass}
+  
+   \textit{Thin Solid Films} {\textbf {519}}, 7503 (2011). \\
+ \textit{Journal of Applied Physics} {\textbf {112}}, 103708 (2012). \\
+ 
  \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{figures/paper2figure4.eps}
-  \captionof{figure}{\tiny{Total DOS of the VBs and CB by pba and fbp.}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.82\linewidth]{figures/paper2figure6.eps}
-  \captionof{figure}{\tiny{DOS mass by fbp. \quad \quad \quad \quad \quad \quad}}
-  \label{fig:test2}
-\end{minipage}
+  \includegraphics[width=0.65\linewidth]{figures/paper2.eps}
 \end{figure}
   
 \end{frame}
@@ -171,23 +167,11 @@ parabolic band approximation: pba.
 \captionsetup{width=0.4\linewidth}
 \begin{frame}
   \frametitle{Previous results 2: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
-
+\textit{Applied Physics Letters} {\textbf {101}}, 261903 (2012).
    \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
-  \captionof{figure}{{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
-at 40 K (solid line) and 300 K (dashed lines).}}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.85\linewidth]{figures/APL1a.jpg}
-  \captionof{figure}{{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
-calculated at 0 K.}}
-  \label{fig:test2}
-\end{minipage}
+  \includegraphics[width=1\linewidth]{figures/paper3}
+
 \end{figure}
   
 \end{frame}
@@ -198,7 +182,7 @@ calculated at 0 K.}}
 
 \begin{frame}
   \frametitle{Previous results 2: analysis of the imaginary part of dielectric function}
-
+\textit{Applied Physics Letters} {\textbf {101}}, 261903 (2012).
      \begin{figure}
 \centering
 \begin{minipage}{.45\textwidth}
@@ -219,73 +203,120 @@ calculated at 0 K.}}
 
 
 \begin{frame}
-  \frametitle{New results: absorption and band-gap in Cu-based materials}
+  \frametitle{Current results: absorption and band-gap in Cu-based materials}
+Submitted.
     \begin{figure}
 \centering
-\begin{minipage}{.3\textwidth}
+\begin{minipage}{.33\textwidth}
   \centering
-  \includegraphics[width=1.0\linewidth]{figures/ABS.eps}
-  \captionof{figure}{\scriptsize{aaa.}}
+  \includegraphics[width=0.9\linewidth]{figures/ABS.eps}
+    \captionsetup{width=3\linewidth}
+  \captionof{figure}{\scriptsize{\quad \quad \quad \quad HSE: Cu\textsubscript{2}SnS\textsubscript{3} and Cu\textsubscript{4}SnS\textsubscript{4}, GW: others. CSHIFT=0.03.}}
   \label{fig:test1}
 \end{minipage}%
-\begin{minipage}{.3\textwidth}
+\begin{minipage}{.33\textwidth}
   \centering
-  \includegraphics[width=1.0\linewidth]{figures/ABSto1ev.eps}
+  \includegraphics[width=0.9\linewidth]{figures/ABSto1ev.eps}
   \captionsetup{width=0.9\linewidth}
-  \captionof{figure}{\scriptsize{aaa.}}
+  \captionof{figure}{\scriptsize{}}
   \label{fig:test2}
 \end{minipage}
-\begin{minipage}{.3\textwidth}
+\begin{minipage}{.33\textwidth}
   \centering
-  \includegraphics[width=1.0\linewidth]{figures/bandgap.eps}
+  \includegraphics[width=0.9\linewidth]{figures/bandgap.eps}
   \captionsetup{width=0.9\linewidth}
-  \captionof{figure}{\scriptsize{aaa.}}
+  \captionof{figure}{\scriptsize{}}
   \label{fig:test2}
 \end{minipage}
-
 \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{New results: band structure in Cu-based materials}
+  \frametitle{Current results: band structure in Cu-based materials}
+  Submitted.
    \begin{figure}
    \centering
-  \includegraphics[width=0.70\linewidth]{figures/bs.eps}
+  \includegraphics[width=0.6\linewidth]{figures/bs.eps}
   \end{figure}
- % \captionsetup{width=0.7\linewidth}
-  \captionof{figure}{\scriptsize{aaa.}}
+ \captionsetup{width=0.7\linewidth}
+  \captionof{figure}{\scriptsize{Circles(HSE: Cu\textsubscript{2}SnS\textsubscript{3} and Cu\textsubscript{4}SnS\textsubscript{4}, GW: others), solid lines(PBE).}}
   \label{fig:test2}
 \end{frame}
 
 \begin{frame}
-  \frametitle{New results: density-of-states in Cu-based materials}
+  \frametitle{Current results: density-of-states in Cu-based materials}
+  Submitted.
+  \begin{figure}
    \centering
-  \includegraphics[width=0.7\linewidth]{figures/dos1.eps}
+  \includegraphics[width=0.8\linewidth]{figures/dos_1.eps}
   \captionsetup{width=0.7\linewidth}
  % \captionof{figure}{\scriptsize{aaa.}}
+ \end{figure}
   \label{fig:test2}
 \end{frame}
 
 \begin{frame}
-  \frametitle{New results: density-of-states in Cu-based materials}
+  \frametitle{Current results: density-of-states in Cu-based materials}
+  Submitted.
+  \begin{figure}
    \centering
-  \includegraphics[width=0.7\linewidth]{figures/dos2.eps}
+  \includegraphics[width=0.8\linewidth]{figures/dos_2.eps}
   \captionsetup{width=0.7\linewidth}
  % \captionof{figure}{\scriptsize{aaa.}}
+ \end{figure}
   \label{fig:test2}
 \end{frame}
 
 \begin{frame}
-  \frametitle{New results:  quantum efficiency in Cu-based materials solar cells}
+  \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
+  add a model figure	
 \end{frame}
 
 
-\section{Summary}
+\begin{frame}
+  \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
+  Submitted.
+  \begin{figure}
+   \centering
+  \includegraphics[width=1\linewidth]{figures/QE1.eps}
+  \captionsetup{width=1\linewidth}
+ % \captionof{figure}{\scriptsize{aaa.}}
+ \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
+  \begin{equation}
+     A(d)=\frac{\int I(\lambda) QE(\lambda, d) d\lambda}{\int I(\lambda) d\lambda}
+  \end{equation}
+
+    \begin{equation}
+     A(d)=\frac{\int I(\lambda) QE(\lambda, d) d\lambda}{\int I(\lambda) QE(\lambda, d \longrightarrow) d\lambda}
+  \end{equation}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{Current results:  quantum efficiency in Cu-based materials solar cells}
+  Submitted.
+  \begin{figure}
+   \centering
+  \includegraphics[width=1\linewidth]{figures/QE2.eps}
+  \captionsetup{width=1\linewidth}
+ % \captionof{figure}{\scriptsize{aaa.}}
+ \end{figure}
+ \begin{equation}
+    / \int I(\lambda) d\lambda, \int I(\lambda) QE(\lambda, d) d\lambda / \int I(\lambda)QE(\lambda, d=\infty) d\lambda
+ \end{equation}
+
+
+\end{frame}
+
+
 \begin{frame}
 \frametitle{Summary}
-
- 
-
 \begin{itemize}
  
  \item Previous work:
@@ -299,12 +330,12 @@ calculated at 0 K.}}
 
 
 
- \item Previous work:
+ \item Current work:
 
 
  \begin{itemize}
-\item Eergy bands are non-parabolic even very close to the $\Gamma$-point, and the effective masses are \textbf{k}-dependency.
-\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
+\item ...
+\item ...
 \end{itemize}
 
 
